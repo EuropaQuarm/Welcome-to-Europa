@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europa Quarm DKP Bidding Rules</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .infographic {
+            text-align: center;
+        }
+        .infographic img {
+            max-width: 100%;
+            height: auto;
+        }
+        .info-section {
+            margin-top: 30px;
+        }
+        .info-section p {
+            line-height: 1.6;
+        }
+        .links a {
+            display: block;
+            color: #2980b9;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .example-bid {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .example-bid button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .example-bid button:hover {
+            background-color: #1a5276;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Europa!</h1>
+        <div class="infographic">
+        <div class="info-section">
+            <p>
+                We're one of the top guilds on Quarm, but we keep things casual. Raid when you want, relax when you need to. If you're ready for raids, we're tackling everything Quarm has to offer. If not, just level up and enjoy the game with your guildmates!
+            </p>
+            <p>
+                New members start as trialists. You'll earn "upvotes" on your trial post from grouping, raiding, interacting in Discord, etc. Once you get enough upvotes, you'll become a full member. Just be yourself and you'll fit right in!
+            </p>
+            <p>
+                For those ready to raid, check out the simple infographic below for bidding. It covers the basic information you need to utilize the DKP you will work hard earning! But, when you have some time we recommend reading the full rules for more clarity. Read them now or use as a reference later to avoid any confusion:
+            </p>
+            <div class="links">
+                <a href="https://docs.google.com/document/d/e/2PACX-1vTpv3nvZ1szU9T4GiaFgo9cWwjw_JLhTKXJrlYQVd7jpSndgOGOEuPUciH5Xum0hMRUbFGNy91MdCK2/pub" target="_blank">Read the Europa Quarm Guild Charta</a>
+                <a href="https://docs.google.com/document/d/e/2PACX-1vQkXwmX8i0MxeOyJrWoZ5sGz_0D2zxy4HtfxO_XPL472fBw6dzjrfr3rt7AcbgcmXmMB_xWQUd8IiS1/pub" target="_blank">Read the Europa Quarm Guild Governance</a>
+                <a href="https://docs.google.com/document/d/e/2PACX-1vQAspJd7xbN45R8zGnx_5dEacYr0KzlHB5OLNXuKPf_aT09Hf_zRR2ZqYXtgeXgEA_K8x2lkd6BliSs/pub" target="_blank">Read the Europa Quarm DKP and Raid Ruleset</a>
+                <a href="https://docs.google.com/document/d/e/2PACX-1vRLHlVwxxQhyKle_NIttRZLzFyXquAzhx-ggOF4KX2MyC75zT9dIAb64TObovP-1r4PEa3dW_yKZbkv/pub" target="_blank">Read the Europa Quarm Raiding Guildelines</a>
+                <a href="https://discord.com/channels/Europa - An Everquest Guild📣announcements" target="_blank">Review the posts in Announcements on Discord</a>
+            </div>
+            <p>
+                If you have any questions, feel free to reach out to any of our officers in Discord or in-game. You can find the list of Guild Officers in the Announcement section of Discord.
+            </p>
+            <p>
+                Again, welcome to Europa! I hope you enjoy this guild as much as I do!
+            </p>
+        </div>
+	    <div class="infographic">
+            <img src="Trial Bidding v2.png" alt="DKP Bidding Rules Infographic">
+        </div>
+        <div class="example-bid">
+            <h2>Copyable Bid Example</h2>
+	    <p>Click the button to copy a bid example to your clipboard. You can paste it in-game using Ctrl + V and edit it as needed.</p>
+            <button onclick="copyToClipboard('/rs [item] [name] Trial [dkp amount]')">Copy to Clipboard!</button>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Bid text copied to clipboard!');
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
